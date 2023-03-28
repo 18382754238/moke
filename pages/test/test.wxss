@@ -1,0 +1,7 @@
+/* pages/test/test.wxss */
+view{
+  width: 200rpx;
+  height: 100rpx;
+  border: 1px solid red;
+  background-color: aliceblue;
+}

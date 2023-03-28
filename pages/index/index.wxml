@@ -1,0 +1,148 @@
+<view class="container">
+  <input type="text" class="header-input" 
+  placeholder="AngularJs.MySQL.Java"
+  placeholder-class="header-input-placeholder"
+  bindinput="handleInputChange"
+  />
+  <icon type="search" class="header-input-icon"
+  size="17"
+  wx:if="{{showIcon}}"
+  />
+  <view class="navigator" >
+    <view 
+    class="navigator-item" 
+    wx:for="{{tabs}}"
+    wx:key="type"
+    bindtap="changeType" 
+    data-type="{{item.type}}">
+      <image src="../../resources/{{item.url}}" mode=""/>
+      {{item.name}}
+      <view class="navigator-active  navigator-active-{{item.type}}" 
+      hidden="{{type!==item.type}}"/>
+    </view>
+  </view>
+  <block wx:if="{{type==='recommend'}}">
+    <swiper	
+      previous-margin="18rpx" 
+      next-margin="18rpx" 
+      circular="true"
+      autoplay="true"
+    class="swiper">
+      <swiper-item class="swiper-item">
+        <image src="	https://img4.mukewang.com/63a9108c00014a6817920764.jpg" class="swiper-image" mode=""/>
+      </swiper-item>
+      <swiper-item class="swiper-item">
+        <image src="	https://img2.mukewang.com/63a90ff90001822e17920764.jpg" class="swiper-image" mode=""/>
+      </swiper-item>
+      <swiper-item class="swiper-item"> 
+        <image src="  https://img4.mukewang.com/63a9102e0001713417920764.jpg" class="swiper-image" mode=""/>
+      </swiper-item>
+    </swiper>
+    <view class="project">
+      <navigator url="/pages/hot/hot">
+        <view class="project-text">实战推荐</view>
+      </navigator>
+      <view class="project-item">
+        <image src="https://img1.mukewang.com/szimg/5ac2dfe100014a9005400300.jpg" mode="" class="project-item-pic"/>
+        <view class="project-item-content">
+          <view class="project-item-title">
+            微信小程序入门与实战常用组件 开发技巧API 项目实战
+          </view>
+          <view class="project-item-tags">
+            <view class="project-item-price-active">￥198</view>
+            <view class="project-item-price">￥198</view>
+            <view class="project-item-notice">APP购买立减 ￥3</view>
+            <view class="project-item-view">APP购买立减 ￥3</view>
+            <view class="project-item-user">
+              <image src="../../resources/my-icon-my-icon.png" mode="" class="project-item-icon"/>
+              2892
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="project-item">
+        <image src="https://img1.mukewang.com/szimg/5ac2dfe100014a9005400300.jpg" mode="" class="project-item-pic"/>
+        <view class="project-item-content">
+          <view class="project-item-title">
+            微信小程序入门与实战常用组件 开发技巧API 项目实战
+          </view>
+          <view class="project-item-tags">
+            <view class="project-item-price-active">￥198</view>
+            <view class="project-item-price">￥198</view>
+            <view class="project-item-notice">APP购买立减 ￥3</view>
+            <view class="project-item-view">APP购买立减 ￥3</view>
+            <view class="project-item-user">
+              <image src="../../resources/my-icon-my-icon.png" mode="" class="project-item-icon"/>
+              2892
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="project-item">
+        <image src="https://img1.mukewang.com/szimg/5ac2dfe100014a9005400300.jpg" mode="" class="project-item-pic"/>
+        <view class="project-item-content">
+          <view class="project-item-title">
+            微信小程序入门与实战常用组件 开发技巧API 项目实战
+          </view>
+          <view class="project-item-tags">
+            <view class="project-item-price-active">￥198</view>
+            <view class="project-item-price">￥198</view>
+            <view class="project-item-notice">APP购买立减 ￥3</view>
+            <view class="project-item-view">APP购买立减 ￥3</view>
+            <view class="project-item-user">
+              <image src="../../resources/my-icon-my-icon.png" mode="" class="project-item-icon"/>
+              2892
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="project-item">
+        <image src="https://img1.mukewang.com/szimg/5ac2dfe100014a9005400300.jpg" mode="" class="project-item-pic"/>
+        <view class="project-item-content">
+          <view class="project-item-title">
+            微信小程序入门与实战常用组件 开发技巧API 项目实战
+          </view>
+          <view class="project-item-tags">
+            <view class="project-item-price-active">￥198</view>
+            <view class="project-item-price">￥198</view>
+            <view class="project-item-notice">APP购买立减 ￥3</view>
+            <view class="project-item-view">APP购买立减 ￥3</view>
+            <view class="project-item-user">
+              <image src="../../resources/my-icon-my-icon.png" mode="" class="project-item-icon"/>
+              2892
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="project-item">
+        <image src="https://img1.mukewang.com/szimg/5ac2dfe100014a9005400300.jpg" mode="" class="project-item-pic"/>
+        <view class="project-item-content">
+          <view class="project-item-title">
+            微信小程序入门与实战常用组件 开发技巧API 项目实战
+          </view>
+          <view class="project-item-tags">
+            <view class="project-item-price-active">￥198</view>
+            <view class="project-item-price">￥198</view>
+            <view class="project-item-notice">APP购买立减 ￥3</view>
+            <view class="project-item-view">APP购买立减 ￥3</view>
+            <view class="project-item-user">
+              <image src="../../resources/my-icon-my-icon.png" mode="" class="project-item-icon"/>
+              2892
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{type==='activity'}}">
+    <view>
+      <image 
+      wx:for="{{activity}}" src="" mode=""
+      wx:key="imgUrl"
+      src="{{item.imgUrl}}"
+      class="activity-item"
+      />
+    </view>
+  </block>
+</view>
+

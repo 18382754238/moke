@@ -1,0 +1,31 @@
+<view class="tabs">
+  <view class="tab {{rankType==='project'?'active':''}}"
+  bindtap="handleTapChange"
+  data-type='project'
+  >
+  实战排行
+  <view class="active-bar"  wx:if="{{rankType==='project'}}"> </view>
+  </view>
+  <view 
+  class="tab {{rankType==='path'?'active':''}}" 
+  bindtap="handleTapChange" 
+  data-type='path'>
+  路径排行
+    <view class="active-bar" wx:if="{{rankType==='path'}}"> </view>
+  </view>
+</view>
+<view class="time">
+  <view wx:for="{{rankPeriods}}" wx:key="title" class="week {{item.value===rankPeriod?'time-active':''}}" data-type='{{item.value}}' bindtap="handleTimeChange">{{item.title}}</view>
+</view>
+<view class="list">
+  <view class="item" wx:for="{{currentList}}" wx:key="index">
+    <image class="item-image" src="{{item.imgUrl}}" mode=""/>
+    <view class="item-title">
+      {{item.title}}
+    </view>
+    <image wx:if="{{index===0}}" class="item-number-img" src="../../resources/金牌.png" mode=""/>
+    <image wx:elif="{{index===1}}" class="item-number-img" src="../../resources/银牌.png" mode=""/>
+    <image wx:elif="{{index===2}}" class="item-number-img" src="../../resources/铜牌.png" mode=""/>
+    <view class="item-number-img item-number-num" wx:else>{{index+1}}</view>
+  </view>
+</view>

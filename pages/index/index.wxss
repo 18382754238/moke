@@ -1,0 +1,145 @@
+.container{
+  position: relative;
+}
+.header-input{
+  line-height: 72rpx;
+  margin: 22rpx 36rpx 14rpx 36rpx;
+  border: 1rpx solid #D9DDE1;
+  border-radius: 36rpx;
+  padding: 0 36rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.header-input-placeholder{
+  color: rgba(133,133,133,.6);
+}
+.header-input-icon{
+  position: absolute;
+  left: 50%;
+  top: 8rpx;
+  transform: translateX(-180rpx);
+}
+.navigator{
+  display: flex;
+  line-height: 112rpx;
+  margin-bottom: 6rpx;
+}
+.navigator-item{
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32rpx;
+  color: #2b333b;
+  position: relative;
+}
+.navigator-item>image{
+  width: 36rpx;
+  height: 36rpx;
+  position: relative;
+  top: 4rpx;
+}
+.navigator-active{
+  width: 32rpx;
+  height: 8rpx;
+  border-radius:4rpx;
+  background:#f01414 ;
+  position: absolute;
+  left: 90rpx;
+  bottom: 20rpx;
+}
+.navigator-active-path{
+  background-color: purple;
+}
+.navigator-active-project{
+  background-color:brown ;
+}
+.navigator-active-acitivity{
+  background-color: pink;
+}
+.navigator-active-recommand {
+  background-color: #f01414;
+}
+.swiper{
+  height:234rpx ;
+}
+.swiper-image{
+  width: 708rpx;
+  border-radius: 12rpx;
+  height: 234rpx;
+}
+.swiper-item{
+box-sizing: border-box;
+padding: 0 6rpx;
+}
+.project{
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+.project-text{
+  line-height: 32rpx;
+  font-size: 28rpx;
+  color: #2b333b;
+  font-weight: bold;
+}
+.project-item{
+  display: flex;
+  margin-top: 16rpx;
+}
+.project-item-pic{
+  width: 208rpx;
+  height: 136rpx;
+  border-radius: 16rpx;
+}
+.project-item-content{
+  flex: 1;
+  margin-left: 24rpx;
+  border-bottom: 1px solid #d9dde1;
+  margin-right: 40rpx;
+  padding-bottom:10rpx;
+}
+.project-item-title{
+  line-height: 40rpx;
+  font-size: 32rpx;
+  color: #2b333b;
+  font-weight: bold;
+}
+ .project-item-tags{
+   margin-top: 12rpx;
+   font-size: 24rpx;
+   line-height: 32rpx;
+ }
+ .project-item-tags view{
+   margin-right: 18rpx;
+   float: left;
+   color: #71777D;
+ }
+ .project-item-tags .project-item-price-active{
+   color: #f01414;
+   font-weight: bold;
+ }
+ .project-item-notice{
+   background: rgba(242,13,13,.1);
+   border-radius: 4rpx;
+   font-size: 20rpx;
+   color: #f20d0d;
+ }
+ .project-item-user{
+   line-height: 32rpx;
+   color:#71777d;
+   font-size: 24rpx;
+ }
+ .project-item-icon{
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 2rpx;
+  left: 4rpx;
+ }
+ .activity-item{
+   display: block;
+   width: 702rpx;
+   height: 232rpx;
+   margin: 0 auto 32rpx;
+   border-radius:12rpx ;
+
+ }

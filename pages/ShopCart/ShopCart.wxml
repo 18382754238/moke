@@ -1,0 +1,2 @@
+<!--pages/ShopCart/ShopCart.wxml-->
+<van-button type="default" bind:click='btn'>默认按钮</van-button>

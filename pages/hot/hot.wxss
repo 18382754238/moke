@@ -1,0 +1,80 @@
+.tabs{
+  display: flex;
+  padding: 0 120rpx;
+  height: 88rpx;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.1);
+}
+.tab{
+  flex:1;
+  line-height: 72rpx;
+  position: relative;
+  text-align:center;
+  font-size: 36rpx;
+  color: #71777D;
+}
+.active{
+  color:#2b3338;
+}
+.active-bar{
+  position: absolute;
+  top: 66rpx;
+  left: 110rpx;
+  width: 36rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background-color: #f01414;
+}
+.time{
+  display: flex;
+  margin: 40rpx auto;
+  width: 240rpx;
+  height: 64rpx;
+  border: 1px solid #71777d;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+
+}
+.week ,.month{
+  color: #71777d;
+  flex: 1;
+  height: 52rpx;
+  text-align: center;
+  background-color: #fff;
+  line-height: 52rpx;
+  margin: 6rpx;
+  border-radius: 8rpx;
+}
+.time-active{
+  background-color: #71777d;
+  color: #fff;
+}
+.list{
+  margin-top: 24rpx;
+}
+.item{
+   margin: 0 48rpx 40rpx 48rpx;
+   display: flex;
+   align-items: center;
+}
+.item-image{
+  width: 180rpx;
+  height: 120rpx;
+  border-radius: 8rpx;
+}
+.item-title{
+  font-size: 28rpx;
+  margin-left: 24rpx;
+  color: #2b333b;
+  height: 100%;
+  flex: 1;
+  word-break: break-all;
+  margin-right: 48rpx;
+}
+.item-number-img{
+  width: 60rpx;
+  height: 52rpx;
+  margin-right: 20rpx;
+}
+.item-number-num{
+  margin-right: 0;
+}
